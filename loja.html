@@ -7,77 +7,106 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"rel="stylesheet">
     <link rel="icon" href="./pictures/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="loja.css">
     <title>LOJA</title>
 </head>
 
 <body>
-    <!–CRIAÇÃO DA MINHA NAVBAR PARA A NAVEGAÇÃO DO CLIENTE->
-        <header class="header">
-            <section>
-                <a href="site.html" class="logo">
-                    <img src="./pictures/logo.png" width="130px" alt="logo">
-                </a>
+    <!-- CRIAÇÃO DA MINHA NAVBAR PARA A NAVEGAÇÃO DO CLIENTE -->
+    <header class="header">
+        <section>
+            <a href="site.html" class="logo">
+                <img src="./pictures/logo.png" width="130px" alt="logo">
+            </a>
 
-                <nav class="navbar">
-                    <a href="site.html">HOME</a>
-                    <a href="loja.html">SHOP ALL</a>
-                    <a href="sac.html">SAC</a>
-                    <a href="sobre.html">SOBRE</a>
-                </nav>
+            <nav class="navbar">
+                <a href="site.html">HOME</a>
+                <a href="loja.html">SHOP ALL</a>
+                <a href="sac.html">SAC</a>
+                <a href="sobre.html">SOBRE</a>
+            </nav>
 
-                <div class="icons">
-                    <img width="30" height="30" src="https://img.icons8.com/ios/30/search--v1.png" alt="search--v1" />
+            <div class="icons">
+                <img width="30" height="30" src="https://img.icons8.com/ios/30/search--v1.png" alt="search--v1" />
+                <a href="#" id="open-cart">
                     <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png"
                         alt="shopping-cart--v1" />
-                </div>
-            </section>
-        </header>
-        <section class="menu" id="menu">
-            <h2 class="title">NOSSAS COLEÇÕES</h2>
-    
-            <div class="box-container">
-                <div class="box">
-                    <img src="./pictures/camisas/imagem_2025-03-19_195258667-removebg-preview.png" alt="item-1">
-                    <h3>Camisa Streewear Caveiras</h3>
-                    <div class="price">R$180,00 <span>R$200,00</span></div>
-                    <a href="#" class="btn">Adicione ao carrinho</a>
-                </div>
-                <div class="box">
-                    <img src="./pictures/camisas/image-removebg-preview (3).png" alt="item-1">
-                    <h3>Camisa Streewear</h3>
-                    <div class="price">R$100,00 <span>R$200,00</span></div>
-                    <a href="#" class="btn">Adicione ao carrinho</a>
-                </div>
-                <div class="box">
-                    <img src="./pictures/camisas/image-removebg-preview (4).png" alt="item-1">
-                    <h3>Camisa Gengar</h3>
-                    <div class="price">R$90,00 <span>R$100,00</span></div>
-                    <a href="#" class="btn">Adicione ao carrinho</a>
-                </div>
-                <div class="box">
-                    <img src="./pictures/camisas/image-removebg-preview (5).png" alt="item-1">
-                    <h3>Camisa oversized</h3>
-                    <div class="price">R$50,00 <span>R$80,00</span></div>
-                    <a href="#" class="btn">Adicione ao carrinho</a>
-                </div>
-                <div class="box">
-                    <img src="./pictures/camisas/image-removebg-preview (6).png" alt="item-1">
-                    <h3>Camisa Streewear SZA</h3>
-                    <div class="price">R$50,00 <span>R$100,00</span></div>
-                    <a href="#" class="btn">Adicione ao carrinho</a>
-                </div>
-                <div class="box">
-                    <img src="./pictures/camisas/image-removebg-preview (7).png" alt="item-1">
-                    <h3>LOF1</h3>
-                    <div class="price">R$100,00 <span>R$200,00</span></div>
-                    <a href="#" class="btn">Adicione ao carrinho</a>
-                </div>
+                </a>
             </div>
         </section>
-    
+    </header>
+
+    <!-- SEÇÃO DE PRODUTOS -->
+    <section class="menu" id="menu">
+        <h2 class="section-title">NOSSAS COLEÇÕES</h2>
+
+        <div class="box-container">
+            <!-- PRODUTOS -->
+            <div class="box">
+                <img src="./pictures/camisas/camisaCarrinho5.png" alt="item-1" class="product-img">
+                <h3 class="product-title">Camisa Streewear Caveiras</h3>
+                <div class="price">R$180,00 <span>R$200,00</span></div>
+                <a href="#"class="add-cart">Adicione ao carrinho</a>
+            </div>
+            <!-- PRODUTOS -->
+            <div class="box">
+                <img src="./pictures/camisas/camisaCarrinho2.png" alt="item-2" class="product-img">
+                <h3 class="product-title">Camisa Streewear</h3>
+                <div class="price">R$100,00 <span>R$200,00</span></div>
+                <a href="#" class="add-cart">Adicione ao carrinho</a>
+            </div>
+            <!-- PRODUTOS -->
+            <div class="box">
+                <img src="./pictures/camisas/camisaCarrinho3.png" alt="item-3" class="product-img">
+                <h3 class="product-title">Camisa Gengar</h3>
+                <div class="price">R$90,00 <span>R$100,00</span></div>
+                <a href="#" class="add-cart">Adicione ao carrinho</a>
+            </div>
+            <!-- PRODUTOS -->
+            <div class="box">
+                <img src="./pictures/camisas/camisaCarrinho4.png" alt="item-4" class="product-img">
+                <h3 class="product-title">Camisa oversized</h3>
+                <div class="price">R$50,00 <span>R$80,00</span></div>
+                <a href="#" class="add-cart">Adicione ao carrinho</a>
+            </div>
+            <!-- PRODUTOS -->
+            <div class="box">
+                <img src="./pictures/camisas/camisaCarrinho6.png" alt="item-5" class="product-img">
+                <h3 class="product-title">Camisa Streewear SZA</h3>
+                <div class="price">R$50,00 <span>R$100,00</span></div>
+                <a href="#" class="add-cart">Adicione ao carrinho</a>
+            </div>
+            <!-- PRODUTOS -->
+            <div class="box">
+                <img src="./pictures/camisas/camisaCarrinho7.png" alt="item-6" class="product-img">
+                <h3 class="product-title">LOF1</h3>
+                <div class="price">R$100,00 <span>R$200,00</span></div>
+                <a href="#"  class="add-cart">Adicione ao carrinho</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRINHO DE COMPRAS -->
+    <div class="cart">
+        <h2 class="cart-title">CARRINHO DE COMPRA</h2>
+        <div class="cart-content">
+           
+        </div>
+
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">R$200,00</div>
+        </div>
+        <!--botao de comprar-->
+        <button type="button" class="btn-buy">Compre agora</button>
+        <!--botao de fechar-->
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+
+    <script src="loja.js"></script>
 </body>
 
 </html>

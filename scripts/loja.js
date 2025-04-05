@@ -11,7 +11,6 @@ cartIcon.onclick=() =>{
 
 //fecha o carrinho quando clicar
 closeCart.onclick=() =>{
-    
     cart.classList.remove("active")
 }
 

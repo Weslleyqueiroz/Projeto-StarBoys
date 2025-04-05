@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="./pictures/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="loja.css">
@@ -30,7 +31,18 @@
             </nav>
 
             <div class="icons">
+                <!--Icone de pesquisa que inicialmente é "fechado"-->
+                <a href= "#" id = "search-box">
                 <img width="30" height="30" src="https://img.icons8.com/ios/30/search--v1.png" alt="search--v1" />
+                 </a>
+                  <!--Icone de pesquisa abrindo...-->
+
+                  <div id = "search-container" style="display: none;">
+                    <input type="text" id="search-input" placeholder="Digite sua busca..."/>
+                    <button id="search-btn">Buscar</button>
+                  </div>
+
+
                 <a href="#" id="open-cart">
                     <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png"
                         alt="shopping-cart--v1" />
@@ -49,7 +61,7 @@
                 <img src="./pictures/camisas/camisaCarrinho5.png" alt="item-1" class="product-img">
                 <h3 class="product-title">Camisa Streewear Caveiras</h3>
                 <div class="price">R$180,00 <span>R$200,00</span></div>
-                <a href="#"class="add-cart">Adicione ao carrinho</a>
+                <a href="#" class="add-cart">Adicione ao carrinho</a>
             </div>
             <!-- PRODUTOS -->
             <div class="box">
@@ -84,7 +96,7 @@
                 <img src="./pictures/camisas/camisaCarrinho7.png" alt="item-6" class="product-img">
                 <h3 class="product-title">LOF1</h3>
                 <div class="price">R$100,00 <span>R$200,00</span></div>
-                <a href="#"  class="add-cart">Adicione ao carrinho</a>
+                <a href="#" class="add-cart">Adicione ao carrinho</a>
             </div>
         </div>
     </section>
@@ -93,7 +105,7 @@
     <div class="cart">
         <h2 class="cart-title">CARRINHO DE COMPRA</h2>
         <div class="cart-content">
-           
+
         </div>
 
         <div class="total">
@@ -106,7 +118,8 @@
         <i class='bx bx-x' id="close-cart"></i>
     </div>
 
-    <script src="loja.js"></script>
+    <script src="./scripts/loja.js"></script>
+    <script src="scripts/procura.js"></script>
 </body>
 
 </html>

@@ -12,7 +12,7 @@
     outline: 0; 
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: none;
     transition: 0.2s linear;
     font-family: "Roboto", sans-serif;
 }   
@@ -32,10 +32,8 @@ body{
     height: 10rem; 
 }
 /* O conteúdo da seção de SAC deve começar abaixo do header */
-.content-sac {
-    margin-top: 12rem;
-    padding: 2rem;
-}
+
+
 section{
     padding: 1.5rem 1rem;
     margin: 0 auto;
@@ -84,6 +82,16 @@ section{
     display: inline-block;
     transition: 0.2s;
 }
+.btn{
+    color: white;
+    background-color: #000000;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.05rem;
+}
 
 .btn:hover {
     letter-spacing: 0.1rem;
@@ -114,7 +122,7 @@ section{
 
 .content p{
     color: #000000;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: 100;
     line-height: 1.8;
     padding: 1rem 0;
@@ -191,7 +199,7 @@ section{
 
 .menu .box-container .box:hover{
     background-color: #000000;
-    color: white; /* Corrigido para garantir que o texto fique visível */
+    color: white; /*  texto visível */
 }
 
 .menu .box-container .box:hover>*{
@@ -286,4 +294,6 @@ section{
 #search-btn:hover {
     background-color: #45a049;
 }
+
+
 

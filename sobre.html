@@ -1,74 +1,104 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="loja.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/loja.css" />
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="./pictures/logo.png" type="image/x-icon">
+        rel="stylesheet" />
+    <link rel="icon" href="./pictures/logo.png" type="image/x-icon" />
     <title>SOBRE</title>
 </head>
 
 <body>
-    <!–CRIAÇÃO DA MINHA NAVBAR PARA A NAVEGAÇÃO DO CLIENTE->
-        <header class="header">
-            <section>
-                <a href="site.html" class="logo">
-                    <img src="./pictures/logo.png" width="130px" alt="logo">
+    <!-- NAV BAR -->
+    <header class="header">
+        <section>
+            <a href="site.html" class="logo">
+                <img src="./pictures/logo.png" width="130px" alt="logo" />
+            </a>
+
+            <nav class="navbar">
+                <a href="site.html">HOME</a>
+                <a href="loja.html">SHOP ALL</a>
+                <a href="sac.html">SAC</a>
+                <a href="sobre.html">SOBRE</a>
+            </nav>
+
+            <div class="icons">
+                <a href="#" id="search-box">
+                    <img width="30" height="30" src="https://img.icons8.com/ios/30/search--v1.png" alt="search--v1" />
                 </a>
 
-                <nav class="navbar">
-                    <a href="site.html">HOME</a>
-                    <a href="loja.html">SHOP ALL</a>
-                    <a href="sac.html">SAC</a>
-                    <a href="sobre.html">SOBRE</a>
-                </nav>
-
-                <div class="icons">
-                    <!--Icone de pesquisa que inicialmente é "fechado"-->
-                    <a href= "#" id = "search-box">
-                    <img width="30" height="30" src="https://img.icons8.com/ios/30/search--v1.png" alt="search--v1" />
-                     </a>
-                      <!--Icone de pesquisa abrindo...-->
-    
-                      <div id = "search-container" style="display: none;">
-                        <input type="text" id="search-input" placeholder="Digite sua busca..."/>
-                        <button id="search-btn">Buscar</button>
-                      </div>
-    
-    
-                    <a href="#" id="open-cart">
-                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png"
-                            alt="shopping-cart--v1" />
-                    </a>
-                </div>
-            </section>
-            <!-- CARRINHO DE COMPRAS -->
-            <div class="cart">
-                <h2 class="cart-title">CARRINHO DE COMPRA</h2>
-                <div class="cart-content">
-
+                <div id="search-container" style="display: none;">
+                    <input type="text" id="search-input" placeholder="Digite sua busca..." />
+                    <button id="search-btn">Buscar</button>
                 </div>
 
-                <div class="total">
-                    <div class="total-title">Total</div>
-                    <div class="total-price">R$200,00</div>
-                </div>
-                <!--botao de comprar-->
-                <button type="button" class="btn-buy">Compre agora</button>
-                <!--botao de fechar-->
-                <i class='bx bx-x' id="close-cart"></i>
+                <a href="#" id="open-cart">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png"
+                        alt="shopping-cart--v1" />
+                </a>
             </div>
-            
+        </section>
+    </header>
 
-            <script src="./scripts/loja.js"></script>
-            <script src="scripts/procura.js"></script>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="content-about">
+        <h1 class="main-page-title">Sobre nós</h1>
+        <div class="content-about-p">
+            <h2>Quem somos?</h2>
+            <p>A Starboys nasceu de um sonho compartilhado entre amigos de infância, que sempre acreditaram que moda vai muito além do que se veste — é uma forma de expressão, identidade e atitude.
+
+                Com origens humildes, começamos pequenos: ideias rabiscadas em cadernos velhos, camisetas customizadas à mão e vendas feitas entre vizinhos e colegas. Não tínhamos grandes recursos, mas sempre tivemos algo ainda mais valioso: a vontade de fazer acontecer e a paixão por criar algo verdadeiro.
+                
+                Cada peça da Starboys carrega um pouco da nossa história, do corre de quem vem de baixo e do orgulho de ver tudo isso ganhando forma. Nossa missão é oferecer roupas que unem estilo, conforto e representatividade, valorizando a originalidade de cada pessoa que veste a nossa marca.
+                
+                Mais do que uma marca, a Starboys é um movimento — feito por gente real, para gente real. E se você chegou até aqui, saiba que faz parte disso também.
+                
+                Seja estrela. Seja você. Seja Starboys.</p>
+        </div>
+    </main>
+
+    <!-- CARRINHO DE COMPRAS -->
+    <div class="cart">
+        <h2 class="cart-title">CARRINHO DE COMPRA</h2>
+        <div class="cart-content"></div>
+
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">R$200,00</div>
+        </div>
+
+        <button type="button" class="btn-buy">Compre agora</button>
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+
+     <!-- ENDEREÇO -->
+     <section class="address" id="address">
+        <h2 class="title">NOSSO ENDEREÇO</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116983.75771962224!2d-46.86833499296717!3d-23.613568712228727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57d8926c9889%3A0x9ea371de55db6f79!2sExclusiviist!5e0!3m2!1spt-BR!2sbr!4v1742411298855!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- RODAPÉ -->
+    <section class="footer">
+        <div class="share">
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/instagram-new--v1.png"
+                alt="instagram-new--v1" />
+        </div>
+    </section>
+
+    <script src="./scripts/loja.js"></script>
+    <script src="./scripts/procura.js"></script>
 </body>
 
 </html>

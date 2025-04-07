@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Login bem-sucedido!");
             window.location.href = "index.html";  
         } else {
-            // se falhar
+            // se errar alguma coisa...
             const errorMessage = document.createElement("p");
             errorMessage.textContent = "E-mail ou senha incorretos. Tente novamente.";
             errorMessage.style.color = "red";
